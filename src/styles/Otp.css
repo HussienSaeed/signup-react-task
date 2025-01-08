@@ -1,0 +1,25 @@
+.otp-area {
+  width: 100%;
+  margin: 20px auto;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.otp-area input {
+  width: 80px;
+  height: 80px;
+  padding: 10px 8x 10px 8x;
+  outline: none;
+  text-align: center;
+  border: 1px solid #d0d5dd;
+  border-radius: 8px;
+  font-size: 48px;
+  color: #7144c8;
+  /* font-family: Inter; */
+}
+
+.otp-area input:valid {
+  border: 5px solid #7144c8;
+}

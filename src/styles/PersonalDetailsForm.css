@@ -1,0 +1,250 @@
+.form-container {
+  /* width: 360px; */
+  /* height: 624px; */
+  /* margin: 50px auto; */
+  /* padding: 20px; */
+  /* background-color: #f9f9f9; */
+  border-radius: 8px;
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+  font-family: Inter, sans-serif;
+}
+
+/* Form title */
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Form group */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 8px;
+  padding-top: 0;
+}
+
+/* Label */
+.form-group label {
+  display: block;
+  /* margin: 6px; */
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+  color: #344054;
+}
+
+/* Input fields */
+.form-group input {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #d0d5dd;
+  background-color: #f9fafb;
+  transition: all 0.2s;
+  &::placeholder {
+    color: #667085;
+  }
+  &:hover {
+    border-color: #d6bbfb;
+  }
+  &:focus {
+    outline: 2px solid red;
+    box-shadow: 0px 0px 0px 4px #f7f0ff;
+    border-color: #d6bbfb;
+  }
+}
+
+/* .form-group select {
+  position: relative;
+  background-color: #d0d5dd;
+  width: 100%;
+  padding: 0.625rem 0.875rem 0.625rem 0.875rem;
+  border: 1px solid #d0d5dd;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  box-sizing: border-box;
+} */
+
+.form-group input:focus {
+  outline: none;
+}
+.form-group select:focus {
+  outline: none;
+}
+
+/* Submit button */
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  text-decoration: none;
+  background-color: #7144c8;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #7144c8;
+}
+
+.existed-account,
+.back-to-login,
+.resend-email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.875rem;
+  color: #475467;
+}
+.Log-In,
+.resend {
+  color: #6941c6;
+}
+
+a {
+  text-decoration: none;
+}
+
+.Language {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+  margin-top: 1rem;
+  & p {
+    font-family: "Cairo", serif;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #667085;
+  }
+}
+.footer-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  color: #475467;
+}
+
+.footer-section p {
+  font-size: 14px;
+}
+
+/*Second page*/
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+/* .shadowOne{
+    box-shadow: 4px 4px 4px 4px #F4EBFF;
+  } */
+
+.header-title {
+  font-size: 1.875rem;
+  line-height: 2.375rem;
+  font-weight: 600;
+}
+
+.header-description-one,
+.header-description-two {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  color: #475467;
+}
+
+.select-box {
+  /* color: #6941c6; */
+}
+
+.select-box::after {
+  border-top-color: #6941c6;
+}
+
+.custom-select {
+  width: 200px;
+  position: relative;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.custom-select__selected {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.custom-select__icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.custom-select__dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  display: none;
+  z-index: 1;
+  border-radius: 5px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.custom-select:hover .custom-select__dropdown {
+  display: block;
+}
+
+.custom-select__option {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.custom-select__option:hover {
+  background-color: #f0f0f0;
+}
+
+.react-tel-input .form-control {
+  background-color: #d0d5dd;
+  width: 100%;
+  padding: 0.625rem 0.875rem 0.625rem 2.875rem;
+  border: 1px solid #d0d5dd;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  box-sizing: border-box;
+}
+
+.react-tel-input {
+  position: relative;
+}
+
+.react-tel-input .country-list {
+  position: absolute;
+  background-color: #d0d5dd;
+  border: 1px solid #d0d5dd;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  box-sizing: border-box;
+  width: 300px;
+}
+
+ul.country-list {
+  z-index: 999999999999999999999999999999100;
+}

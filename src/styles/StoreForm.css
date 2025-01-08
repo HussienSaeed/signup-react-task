@@ -1,0 +1,160 @@
+/* General Form Container */
+.form-container {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+}
+
+/* Form Group Styling */
+.store-form-group {
+  padding: 8px;
+}
+.store-form-group label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+  color: #344054;
+  margin-bottom: 6px;
+}
+
+/* Input Fields */
+
+/* Start style select store industry select  */
+.store-industry-ctr {
+  position: relative;
+  & select {
+    appearance: none;
+    & option {
+    }
+  }
+  & svg {
+    position: absolute;
+    inset: 50% 14px auto auto;
+    transform: translateY(-50%) rotate(0deg);
+    transition: all 0.2s;
+  }
+  &:has(select:focus) svg {
+    transform: translateY(-50%) rotate(180deg);
+  }
+}
+
+.store-industry-ctr select > option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid rgb(208, 213, 221);
+  background-color: rgb(249, 250, 251);
+  cursor: pointer;
+  transition: 0.2s;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+  color: rgb(52, 64, 84);
+}
+/* End style select store industry select  */
+
+.store-form-group input,
+.store-form-group select {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #d0d5dd;
+  background-color: #f9fafb;
+  font-size: 0.875rem;
+  transition: all 0.2s !important;
+}
+
+.store-form-group input::placeholder {
+  color: #667085;
+}
+
+.store-form-group input:focus,
+.store-form-group select:focus {
+  border-color: #d6bbfb;
+  outline: 1px solid #d6bbfb;
+  box-shadow: 0px 0px 0px 4px #f7f0ff;
+}
+
+/* Submit Button */
+.submit-btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+
+/* Back to Login */
+.back-to-login {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 0.875rem;
+  color: #344054;
+}
+
+.back-to-login p {
+  margin-left: 8px;
+  color: #667085;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.back-to-login a:hover {
+  text-decoration: underline;
+}
+
+.examples {
+  margin-bottom: 11px;
+  font-size: 0.875rem;
+  color: #344054;
+}
+
+.store-form-ctr {
+  & .input-url-ctr {
+    display: flex;
+    overflow: hidden;
+    border-radius: 8px;
+    border: 1px solid #d0d5dd;
+    background-color: #f9fafb;
+    transition: all 0.2s;
+    & input {
+      border-radius: 0;
+      border: none;
+      &:focus {
+        box-shadow: none;
+        outline: none;
+      }
+    }
+    & span {
+      display: inline-flex;
+
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 20px;
+      padding: 10px 1rem;
+      border-left: 1px solid #d0d5dd;
+    }
+    &:has(input:hover) {
+      border-color: #d6bbfb;
+    }
+    &:has(input:focus) {
+      outline: 1px solid #d6bbfb;
+      box-shadow: 0px 0px 0px 4px #f7f0ff;
+      border-color: #d6bbfb;
+    }
+  }
+}
